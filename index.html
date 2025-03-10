@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счетчик очков Корова 006</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="menu start-menu" class="start-menu">
+            <h1 class="title start-menu__title">Корова 006
+                <span>счетчик очков</span>
+            </h1>
+            <div class="start-menu__body">
+                <ul class="start-menu__list players-list">
+                    <li class="players-list__item player">
+                        <h3 class="player__name">Игрок 1</h3>
+                        <div class="player__buttons-wrapper">
+                            <!-- <button class="player__button player__button--change">Изменить</button> -->
+                            <button class="button player__button player__button--delete">Х</button>
+                        </div>
+                    </li>
+
+                    <li class="players-list__item player">
+                        <h3 class="player__name">Игрок 2</h3>
+                        <div class="player__buttons-wrapper">
+                            <!-- <button class="player__button player__button--change">Изменить</button> -->
+                            <button class="button player__button player__button--delete">Х</button>
+                        </div>
+                    </li>
+
+                    <li class="players-list__item player">
+                        <h3 class="player__name">Игрок 3</h3>
+                        <div class="player__buttons-wrapper">
+                            <!-- <button class="player__button player__button--change">Изменить</button> -->
+                            <button class="button player__button player__button--delete">Х</button>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="start-menu__buttons-wrapper">
+                    <button class="button start-menu__button start-menu__button--create">Добавить игрока</button>
+                    <button class="button start-menu__button start-menu__button--clear">Очистить все</button>
+                </div>
+                <button class="button button-start" disabled>Начать игру</button>
+            </div>
+        </div>
+        <div class="popup popup-wrapper">
+            <div id="player-popup" class="popup__body player-popup">
+                <div class="popup__container">
+                    <button class="player-popup__close-btn">Х</button>
+                    <h2 class="popup__title title">Введите имя игрока</h2>
+                    <form class="player-popup__form" action="#">
+                        <input type="text" class="player-popup__input">
+                        <button class="player-popup__send"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
